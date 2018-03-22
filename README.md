@@ -1,4 +1,4 @@
-# Prueba técnica front Almundo
+Prueba técnica front Almundo
 ---
 
 # Para levantar el api es necesario tener instalado node.js > 4.x, mongoDB y npm
