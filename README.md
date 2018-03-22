@@ -5,6 +5,7 @@ Prueba técnica front Almundo
 
 # Comandos:
 $ npm install
+
 $ npm run start
 
 
