@@ -57,7 +57,6 @@ exports.saveteHotel = function (req, res) {
 
 exports.getHotelById = function (req, res) {
     Hotel.findById(req.params.id, function (err, hotel) {
-        console.log(req.params.id);
         if (err) {
             return res.json(err);
         } else if (hotel === null) {
@@ -72,6 +71,8 @@ exports.updateHotel = function (req, res) {
     Hotel.findOneAndUpdate({ _id: new_hotel._id }, req.body, { new: true }, function (err, hotel) {
         if (err) {
             return res.json(err);
+        } else if (hotel === null) {
+            res.statusCode = 204;
         }
         return res.json(hotel);
     });
@@ -83,6 +84,8 @@ exports.deleteHotel = function (req, res) {
     }, function (err, hotel) {
         if (err) {
             return res.json(err);
+        } else if (hotel === null) {
+            res.statusCode = 204;
         }
         return res.json(hotel);
     });
