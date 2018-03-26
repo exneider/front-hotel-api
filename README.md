@@ -8,5 +8,9 @@ $ npm install
 
 $ npm run start
 
+## Resteurar base de datos MongoDB
+Losarchivos se encuentran en la carpeta (hotelBD)
+Comando:
+mongorestore -d hotel <directory_backup>
 
 URL: http://localhost:3000/api
