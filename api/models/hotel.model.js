@@ -7,8 +7,8 @@ const HotelSchema = Mongoose.Schema({
   name: { type: String, required: true },
   stars: { type: Number, required: true },
   price: { type: Number, required: true },
-  amenities: { type: Array },
-  mealplan: { type: String }
+  image: { type: String },
+  amenities: { type: Array }
 })
 
 module.exports = Mongoose.model('Hotel', HotelSchema)
